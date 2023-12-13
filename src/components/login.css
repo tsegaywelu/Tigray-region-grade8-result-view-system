@@ -1,0 +1,65 @@
+
+
+.loginhead{
+    background-color: burlywood;
+    font-size: 2rem;
+    margin: 5%;
+    text-align: center;
+    color: RED;
+    display: inline-block;
+}
+.myform {
+    background-color:papayawhip;
+    text-align: center;
+    font-size: 2rem;
+    display: inline-block;
+    margin-left:15% ;
+    width: 70%;
+    
+}
+.log  {
+    font-size: inherit;
+    background-color:#eee;
+}
+@media screen and (max-width: 1000px) {
+    .loginhead{
+        font-size: 1rem;
+        
+    }
+    .myform{
+        font-size: 1rem;
+    }
+    .log{
+        font-size: medium;
+    }
+}
+
+
+
+.merge{
+    display: inline-block;
+    position: relative;
+
+}
+.merge i{
+    position: absolute;
+    left: 1px;
+    top: 2.5px;
+    
+    z-index: 3000;
+}
+.merge input{
+    text-align: center;
+    text-indent: 60px;
+}
+.loglog{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    background-color: darkslategray;
+    padding: 3px;
+}
+.loglog:hover{
+    background-color: bisque;
+    letter-spacing: 4px;
+    padding: 3px;
+}

@@ -1,0 +1,93 @@
+*{
+    background-color: papayawhip;
+    
+    padding: 0px;
+    box-sizing: border-box;
+}
+.logo{
+    padding: 5px;
+   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 5px; 
+}
+.logo h1{
+    font-size: 2rem;
+    
+    flex-grow: 3;
+    text-align: center;
+    
+}
+.logo img{
+    
+    height: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+    .logo {
+    
+   
+      font-size: 20px;
+
+    }
+    .logo h1{
+        font-size: 1rem;
+    }
+    .logo img{
+     height: 40px;
+    }
+   
+  }
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+
+}
+.grid-items{
+   
+    margin: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.hed{
+    text-align: center;
+    color: darkred;
+}
+
+.grid-items input{
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 900px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+        margin-top: 3px;
+        
+    }
+    .grid-items{
+        margin: 3px;
+        font-size: 1rem;
+    }
+    .grid-items input{
+        text-align: center;
+        font-size: 1rem;
+    }
+    h1.hed{
+        font-size: medium;
+    }
+}
+.bu{
+    text-align: center;
+    font-size: larger;
+   
+}
+.bu button{
+    background-color: darkgray;
+    padding: 3px;
+    font-size: 1rem;
+
+}
+.bu button:hover{
+    background-color: whitesmoke;
+}

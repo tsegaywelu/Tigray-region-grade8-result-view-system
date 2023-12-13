@@ -1,0 +1,14 @@
+.grid-co{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-size: 1.5rem;
+}
+.grid-item{
+    background-color: darkred;
+    border: 0.5px solid black;
+}
+.grid-item.map{
+    background-color: wheat;
+    margin: 0px;
+}

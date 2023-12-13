@@ -1,0 +1,22 @@
+.mygrid{
+    
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 2rem;
+    justify-content: center;
+}
+.info{
+    background-color: aliceblue;
+    padding: 2px;
+    border: 1px solid black;
+}
+.heading{
+    text-align: center;
+    color:darkblue;
+    font-style: oblique;
+}
+.update{
+    background-color: black;
+    display: inline-block;
+}

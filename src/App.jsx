@@ -1,24 +1,34 @@
-import React, { useState } from 'react'
-import Navbar from './componenets/Navbar'
+import React from 'react'
+import './App.css'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Registration from './components/registration'
+import Login from './components/login'
+import  Listofsudents from'./components/list of students'
+import Userdetail from './components/Userdetail'
+import  Updatedata from './components/Updatedata'
 
 const App = () => {
-  let [y,sety]=useState();
-  let data="girl";
-  function yescliking(){
-    sety=0;
-    console.log("you are cliking me ")
-    console.log(y++)
-  
-  }
   return (
     <div>
-      {y}
-      {data==="boy"?<h2>boy</h2>:<h1>girl</h1>}
-     
-      <button onClick={yescliking}>click me</button>
+      <BrowserRouter>
+      <Routes>
 
-     <Navbar></Navbar>
+      <Route path='/' element={<Login/>}/>
+      <Route path='/register' element={<Registration/>}/>
+      <Route path='/listofstudents' element={< Listofsudents/>}/>
+      <Route path='/updatedata'    element={<Updatedata/>}/>
+      <Route path='/:Userdetail'  element={<Userdetail/>} />
+
+     {/*  <Route path='/cust/:Userdetail'  element={<Userdetail/>} /> */}
+      
+      
+       
+      </Routes>
+      </BrowserRouter>
      
+
+ 
+
     </div>
   )
 }
