@@ -4,7 +4,7 @@ import React, { useEffect, useState} from "react";
 const Listofstudents = () => {
   const [students,setstudents]=useState([]);
   React.useEffect(()=>{
-    fetch("http://localhost:4000/posts")
+    fetch("192.168.137.228:4000/posts")
     .then((d)=>d.json()).then((dd)=>setstudents(dd)).catch(error=>console.log(error));
   },[])
   return (
